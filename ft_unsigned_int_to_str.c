@@ -10,7 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "printf.h"
+#include "ft_printf.h"
 
 /**
  * unsigned_int_to_str - Converte um número decimal sem sinal em string.

@@ -10,14 +10,14 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "printf.h"
+#include "ft_printf.h"
 
 /**
  * ft_handle_dcml_int - Converte um número decimal em string e imprime.
  * @num: O número a ser convertido.
  * @count: O ponteiro para a contagem de caracteres impressos.
  */
-void ft_handle_dcml_int(int num, int *count) {
+void ft_handle_int_dcml(int num, int *count) {
     char *buffer;
     int length;
 

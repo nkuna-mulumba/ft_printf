@@ -10,7 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "printf.h"
+#include "ft_printf.h"
 
 /**
  * ft_handle_hex_upper - Converte um número em string hexadecimal (maiúsculas) e imprime.

@@ -10,13 +10,13 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "printf.h"
+#include "ft_printf.h"
 
 /**
  * ft_handle_format - Chama a função apropriada para cada especificador de formato.
- * @args: A lista de argumentos variáveis.
- * @format: O especificador de formato.
- * @count: O ponteiro para a contagem de caracteres impressos.
+ * args: A lista de argumentos variáveis.
+ * format: O especificador de formato.
+ * count: O ponteiro para a contagem de caracteres impressos.
  */
 static void ft_handle_format(va_list args, const char format, int *count) {
     if (format == 'c') {
@@ -38,13 +38,11 @@ static void ft_handle_format(va_list args, const char format, int *count) {
     }
 }
 
-#include "printf.h" // Inclui o cabeçalho que declara ft_printf e outras funções.
-
-///**
-// * ft_printf - Função principal que imita o printf original.
-// * @format: A string de formato.
-// * Retorna: O número de caracteres impressos.
-// */
+/*
+ * ft_printf - Função principal que imita o printf original.
+ * format: A string de formato.
+ * Retorna: O número de caracteres impressos.
+*/
 int ft_printf(const char *format, ...) {
     va_list args; // Declara uma variável do tipo va_list para armazenar os argumentos variáveis.
     int count = 0; // Inicializa a contagem de caracteres impressos.
@@ -65,7 +63,7 @@ int ft_printf(const char *format, ...) {
     va_end(args); // Finaliza o uso da lista de argumentos variáveis.
     return count; // Retorna o número total de caracteres impressos.
 }
-
+/*
 int main() {
     // TESTAR CARACTERES E STRINGS
     ft_printf("Caracteres: %c\n", 'A'); // Testa a impressão de um único caractere.
@@ -92,4 +90,4 @@ int main() {
 
     return 0; // Retorna 0 indicando que o programa terminou com sucesso.
 }
-
+*/
